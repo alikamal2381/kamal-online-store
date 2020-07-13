@@ -5,7 +5,6 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Product from "./pages/Product";
 import ProductDetail from "./pages/ProductDetail";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import data from "./data";
@@ -21,8 +20,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
-            <Route path="/product" exact component={Product} />
-            <Route path="/Product/:id" component={ProductDetail} />
+            <Route path="/ProductDetail/:id" component={ProductDetail} />
           </Switch>
 
           <Footer />

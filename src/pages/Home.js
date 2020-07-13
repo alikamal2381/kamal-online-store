@@ -34,7 +34,7 @@ class Home extends Component {
               {data.products.map((product) => (
                 <li>
                   <div className="product">
-                    <Link to={"/product/" + product._id}>
+                    <Link to={"/ProductDetail/" + product._id}>
                       <img
                         className="product-image"
                         src={product.image}
@@ -43,7 +43,9 @@ class Home extends Component {
                     </Link>
 
                     <div className="product-name">
-                      <Link to={"/product/" + product._id}>{product.name}</Link>
+                      <Link to={"/ProductDetail/" + product._id}>
+                        {product.name}
+                      </Link>
                     </div>
                     <div className="product-brand">{product.brand}</div>
                     <div className="product-price">${product.price}</div>

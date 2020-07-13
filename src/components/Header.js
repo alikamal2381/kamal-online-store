@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import Product from "../pages/Product";
 
 class Header extends Component {
   render() {
@@ -60,10 +59,6 @@ class Header extends Component {
 
             <li>
               <Link to="/contact">Contact</Link>
-            </li>
-
-            <li>
-              <Link to="/product">Product</Link>
             </li>
           </ul>
         </aside>
