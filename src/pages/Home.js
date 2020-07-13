@@ -39,6 +39,8 @@ class Home extends Component {
                         className="product-image"
                         src={product.image}
                         alt="product"
+                        width="300px"
+                        height="300px"
                       />
                     </Link>
 
