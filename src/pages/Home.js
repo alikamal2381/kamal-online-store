@@ -37,7 +37,7 @@ class Home extends Component {
                     <Link to={"/product/" + product._id}>
                       <img
                         className="product-image"
-                        src="{product.image}"
+                        src={product.image}
                         alt="product"
                       />
                     </Link>
